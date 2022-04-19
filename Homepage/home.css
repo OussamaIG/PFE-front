@@ -1,0 +1,368 @@
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    pointer-events: all;
+    overflow-y: hidden;
+}
+#nav{
+    background-color: whitesmoke;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#home{
+    width: 102%;
+    height: 1200px;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+.line{
+    background-color: rgb(16, 95, 127);
+    height: 2px;
+    width: 107%;
+    margin-top: 55px;
+    opacity: 1;
+    margin-left: -10px;
+}
+#footer{
+    width: 102%;
+    height: 100px;
+    background-color: rgb(16, 95, 127);
+    margin-left: -10px;
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 400px;
+    display: flex;
+}
+.logoimg{
+    max-width: 50%;
+    height: auto;
+    margin-top: 6px;
+    margin-left: 5px;
+}
+.logo h1{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: rgb(16, 95, 127);
+}
+.buttons{
+    margin-top: 18px;
+    display: flex;
+    position: absolute;
+    left: 880px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+.a{
+    margin-left: 15px;
+}
+
+ion-icon{
+    font-size: 18px;
+}
+.login{
+    margin-top: 11px;
+    display: flex;
+    margin-right: 20px;
+    background-color: rgb(16, 95, 127);
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.icon{
+    margin-top: 4px;
+    margin-right: 4px;
+}
+.log{
+    color: white;
+    font-weight: 500;
+    font-family: 'Poppins';
+    justify-items: center;
+    margin-top: 15px;
+}
+#img{
+    width: 1680px;
+    height: auto;
+}
+.desc{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+}
+p{
+    margin-top: -10px;
+    width: 50%;
+    font-weight: 500;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.card{
+    height: 150px;
+    width: 210px;
+    box-shadow: 0px 2px 7px rgb(16, 95, 127);
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+.card p{
+    font-size: 15px;
+}
+.one{
+    position: absolute;
+    top: 1080px;
+    font-weight: bolder;
+    cursor: default;
+}
+.ph{
+    position: absolute;
+    width: 140px;
+    top: 1110px;
+}
+.ph.two{
+    width: 180px;
+}
+.ph.three{
+    width: 200px;
+}
+.ph.four{
+    width: 205px;
+}
+h4{
+    color: #FFFFFF;
+    font-family: "Poppins";
+    position: absolute;
+    top: 1250px;
+    font-size: 17px;
+    font-weight: 550;
+    cursor: default;
+}
+.us{
+    display: flex;
+    flex-direction: row;
+}
+h5{
+    color: whitesmoke;
+    font-weight: 400;
+    font-family: 'Poppins';
+    position: absolute;
+}
+.h{
+    left: 10px;
+    top: 1275px;
+    cursor: default;
+}
+.h.two{
+    left: 400px;
+    font-weight: 600;
+}
+.h.three{
+    left: 900px;
+    font-weight: 600;
+}
+.phrase{
+    color: whitesmoke;
+    font-family: 'Poppins';
+    left: 0px;
+    position: absolute;
+    cursor: default;
+}
+.phrase.one{
+    left: -250px;
+    top: 1325px;
+    font-size: 13px;
+    color: whitesmoke;
+    font-weight: 400;
+}
+.phrase.two{
+    left: 180px;
+    font-size: 13px;
+    top: 1325px;
+}
+.phrase.three{
+    left: 622px;
+    font-size: 13px;
+    top: 1325px;
+}
+.phrase.four{
+    left: 650px;
+    top: 1345px;
+    font-size: 13px;
+}
+.homebtn{
+    position: absolute;
+    top: 1210px;
+    left: 1300px;
+    font-size: 20px;
+    color:white;
+    background-color: rgb(16, 95, 127);
+    width: 30px;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.gray{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 630px;
+    background-color: gray;
+    opacity: 0;
+    pointer-events: none;
+}
+.box{
+    position: absolute;
+    top: 150px;
+    left: 450px;
+    width: 400px;
+    height: 350px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(16, 95, 127);
+    opacity: 0;
+}
+.close{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border-radius: 20px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 135px;
+    left: 835px;
+    cursor: pointer;
+    opacity: 0;
+}
+.X{
+    font-size: 25px !important;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.prf{
+    font-size: 50px;
+}
+.profile{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    background-color: rgb(16, 95, 127);
+    border-radius: 100px;
+    margin-top: 10px;
+    color: #FFFFFF;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+input{
+    margin-left: 47px;
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(16, 95, 127);
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    color: grey;
+    text-decoration: none;
+    outline-style: none;
+}
+.password{
+    margin-top: 20px;
+    margin-left: 57px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.username{
+    margin-left: 57px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+.login.two{
+   margin-left: 140px;
+   margin-top: 25px;
+   width: 120px !important;
+}
+.eye{
+    position: absolute;
+    top: 232px;
+    left: 333px;
+    color: rgb(16, 95, 127);
+    cursor: pointer;
+}
+
+.showgrey{
+    opacity: 0.6 !important;
+    pointer-events: all !important;
+    overflow-y: hidden !important;
+}
+.opacity1{
+    opacity: 1 !important;
+}
+.overflow{
+    overflow-y: hidden !important;
+}
+.greenst{
+    border: 1px solid green !important;
+}
+.red{
+    border: 1px solid red !important;
+}

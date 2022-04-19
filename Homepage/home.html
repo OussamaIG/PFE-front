@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@200&display=swap');
+        </style>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body id="body" :class="over">
+    <header id="nav">
+        <div class="logo">
+            <img src="logo2.png" alt="" class="logoimg">
+            <h1>Faculté d'informatique</h1>
+        </div>
+        <div class="links">
+            <div class="buttons">
+                <a class="a" href="#nav">HOME</a>
+                <a class="a" href="#desc">ABOUT</a>
+                <a class="a" href="#footer">CONTACT US</a>
+            </div>
+            <div class="login" @click="login">
+                <div class="icon">
+                    <ion-icon name="log-in-outline"></ion-icon>
+                </div>
+                <p class="log">Login</p>
+            </div>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main id="home">
+        <img id="img" src="cropped-20220310_100421-1.png" alt="">
+        <div class="desc" id="desc">
+            <h2>Description</h2>
+            <p>Le département d’ informatique a été crée en 1974 au sein de l’institut de mathématiques. Son appellation était DILM (département d’informatique et logique mathématique). Il forma alors les premiers ingénieurs d’état en informatique de l’USTHB.
+                En 1986, il devint institut d’informatique, pour se consacrer davantage à sa vocation première, la recherche dans le domaine de l’informatique et la formation d’ingénieurs d’état dans la même discipline.
+                En l’an 2000, il redevient encore une fois département d’informatique, rattaché à la faculté d’électronique et informatique, suite au décret de 1998, portant création des facultés.
+                En l’an 2021, la faculté d’informatique a été créée, par décret exécutif 21-467 du 25 Novembre 2021. Elle est constituée de deux départements, le département d’Intelligence Artificielle et Sciences des Données et le département des Systèmes Informatiques.</p>
+            <h3>La faculté d’informatique propose un enseignement :</h2>
+            <div class="cards">
+                <div class="card">
+                    <p class="one">Fondamental</p>
+                    <div class="p"></div>
+                    <p class="ph">pour acquérir les concepts de base et les méthodes de travail</p>
+                </div>
+                <div class="card">
+                    <p class="one">Appliqué</p>
+                    <p class="ph two">pour faciliter l’apprentissage des concepts et déployer un savoir professionnel</p>
+                </div>
+                <div class="card">
+                    <p class="one">Évolutif</p>
+                    <p class="ph three">pour intégrer les progrès technologiques et les exigences du milieu professionnel</p>
+                </div>
+                <div class="card">
+                    <p class="one">Ouvert</p>
+                    <p class="ph four">pour développer les facultés de communication indispensables à l’exercice du métier d’informaticien</p>
+                </div>
+            </div>
+            <a href="#nav">
+                <div class="homebtn">
+                    <ion-icon name="home-outline"></ion-icon>
+                </div>
+            </a>  
+        </div>
+    </main>
+    <footer id="footer">
+        <h4>Contact us :</h4>
+        <div class="us">
+            <h5 class="h one">Téléphone/Fax:</h5>
+            <p class="phrase one">+213 023934031</p>
+            <h5 class="h two">Adresse:</h5>
+            <p class="phrase two">BP 32 Bab Ezzouar, 16111 - ALGER.</p>
+            <h5 class="h three">Emails:</h5>
+            <p class="phrase three">finfo@usthb.dz</p>
+            <p class="phrase four">fInfo.USTHB@gmail.com</p>
+        </div>
+    </footer>
+    <div class="gray" :class="flou">
+    </div>
+    <div class="box" :class="opacity">
+        <div class="profile">
+            <ion-icon class="prf" name="person-outline"></ion-icon>
+        </div>
+        <div class="input">
+            <form action="">
+                <label  class="username" for="">Username</label>
+                <input  class="input" type="text" placeholder="username" @input="getusername" :class="greenstyle">
+                <label class="password" for="">Password</label>
+                <input :type="type" placeholder="********" @input="getpassword" :class="greenpass">
+            </form>
+            <div class="eye"@click="showpassword">
+                <ion-icon name="eye-outline"></ion-icon>
+            </div>
+        </div>
+        <div class="login two" @click="done">
+            <div class="icon">
+                <ion-icon name="log-in-outline"></ion-icon>
+            </div>
+            <p class="log">Login</p>
+        </div>
+    </div>
+    <div class="close" :class="opacity" @click="close">
+        <ion-icon class="X"name="close-outline"></ion-icon>
+    </div>
+</body>
+</html>
