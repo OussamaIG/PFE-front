@@ -1,0 +1,151 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: whitesmoke;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+.navbare{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #1D6F42;
+}
+.navbare .buttons{
+    display: flex;
+    flex-direction: column;
+}
+.navbare .buttons h3{
+    color: #a8a9ad;
+    margin-left: 1em;
+    margin-bottom: -0.1em;
+}
+.navbare .buttons .button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 15px;
+    margin-top: 0.2em;
+    border-radius: 20px;
+    margin-left: 1.2em;
+    cursor: pointer;
+    height: 7vh;
+    width: 80%;
+    padding-left: 0.5em;
+}
+.navbare .buttons .button ion-icon{
+    margin-right: 0.4em;
+    font-size: 18px;
+}
+.navbare .buttons .button p{
+    font-size: 15px;
+}
+.navbare .buttons .button:hover,.navbare .buttons .button:focus{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bolder;
+}
+.navbare .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbare .top h1{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.navbare .top ion-icon{
+    font-size: 22px;
+    margin-right: 0.2em;
+    color: whitesmoke;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: whitesmoke;
+}
+.menu .search{
+    display: flex;
+
+    height: 5vh;
+    justify-content: center;
+    margin-top: 0.3em;
+}
+.menu .search input{
+    width: 30vw;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid #1D6F42;
+    padding-left: 1em;
+}
+.menu .modules{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.menu .modules h2{
+    font-size: 25px;
+    width: 100vw;
+    display: flex;
+    margin-left: 0.2em;
+    color: black;
+}
+.menu .modules .cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-color: yellow;
+    height: 100vh;
+    scrollbar-width: thin;
+}
+.menu .modules .cards .scroll{
+    height: 80vh;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 0.5em;
+}
+::-webkit-scrollbar-track{
+    background: whitesmoke;
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsl(140 42% 42% / 0.5);
+    border-radius: 20vw;
+}
+.menu .modules .cards .cardM{
+    height: 7vh;
+    background-color: #1D6F42;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vw;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin-bottom: 0.4em;
+    margin-right: 0.4em;
+}
+.menu .modules .cards .cardM ion-icon{
+    color: whitesmoke;
+    font-size: 18px;
+    cursor: pointer;
+}
+.menu .modules .cards .cardM p{
+    color: whitesmoke;
+}
+a{
+    text-decoration: none;
+}

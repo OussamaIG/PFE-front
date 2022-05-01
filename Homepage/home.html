@@ -94,17 +94,18 @@
                 <input  class="input" type="text" placeholder="username" @input="getusername" :class="greenstyle">
                 <label class="password" for="">Password</label>
                 <input :type="type" placeholder="********" @input="getpassword" :class="greenpass">
+                <div class="login two" @click="done">
+                    <div class="icon">
+                        <ion-icon name="log-in-outline"></ion-icon>
+                    </div>
+                    <button type="submit">Login</button>
+                </div>
             </form>
             <div class="eye"@click="showpassword">
                 <ion-icon name="eye-outline"></ion-icon>
             </div>
         </div>
-        <div class="login two" @click="done">
-            <div class="icon">
-                <ion-icon name="log-in-outline"></ion-icon>
-            </div>
-            <p class="log">Login</p>
-        </div>
+        
     </div>
     <div class="close" :class="opacity" @click="close">
         <ion-icon class="X"name="close-outline"></ion-icon>

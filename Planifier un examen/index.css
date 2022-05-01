@@ -1,0 +1,113 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background-color: #CCCCCC;
+    overflow-y: hidden;
+}
+.leftbare{
+    height: 100vh;
+    background-color: aliceblue;
+    position: relative;
+    top: -8px;
+    left: -8px;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo h1{
+    font-size: 18px;
+    margin-left: -3px;
+    margin-top: 15px;
+}
+.logo ion-icon{
+    margin-left: 10px;
+    font-size: 30px;
+    color: #377DFF;
+    border-radius: 20px;
+    padding: 5px;
+}
+.menu h2{
+    font-size: 15px;
+    position: relative;
+    left: 40px;
+}
+.menu .button{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    background-color: aliceblue;
+    margin-top: 0px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 40px;
+    color: #8F8F8F;
+}
+.menu .button.up{
+    margin-top: -10px;
+}
+.button h3{
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.button ion-icon{
+    font-size: 18px;
+    margin-left: 8px;
+    padding-left: 10px;
+}
+.menu .button:hover{
+    background-color: #377DFF;
+    cursor: pointer;
+    color: aliceblue;
+    font-weight: 500;
+}
+.menu{
+    margin-top: 20px;
+}
+.profile .image{
+    font-size: 20px;
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 1333px;
+    top: 5px;
+    border: 1px solid black;
+    z-index: 1;
+    cursor: pointer;
+}
+.profile .profilepage{
+    width: 180px;
+    height: 145px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    position: absolute;
+    left: 1185px;
+    top: 3px;
+    z-index: 0;
+    opacity: 0;
+}
+.logout{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+.personalinfo{
+    font-size: 13px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.opacity1{
+    opacity: 1 !important;
+}

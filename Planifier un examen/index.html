@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planning des examens</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="leftbare">
+        <div class="logo">
+            <ion-icon name="settings-outline"></ion-icon>
+            <h1>Planning des examens</h1>
+        </div>
+        <div class="elements" id="elements">
+            <div class="menu">
+                <h2>MENU</h2>
+                <div class="button up">
+                    <ion-icon name="apps-outline"></ion-icon>
+                    <h3>Dashbord</h3>
+                </div>
+                <div class="button">
+                    <a href="Planifier.html">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <h3>Planifier</h3>
+                    </a>
+                </div>
+                <div class="button">
+                    <ion-icon name="calendar-number-outline"></ion-icon>
+                    <h3>Calender</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="profile" id="profile">
+            <div class="image" @click="showprofile">
+                <ion-icon name="person-outline"></ion-icon>
+            </div>
+            <div class="profilepage" :class="showpf">
+                <div class="personalinfo" >
+                    <p>Oussama</p>
+                    <p>Ighil Guitoun</p>
+                </div>
+                <div class="logout">
+                    <p>Logout</p>
+                    <ion-icon name="log-in-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+</body>
+</html>
