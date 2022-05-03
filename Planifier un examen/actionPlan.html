@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planifier</title>
+    <link rel="stylesheet" href="actionPlan.css">
+</head>
+<body>
+    <div class="container">
+        <section class="navbare" id="navbare">
+            <div class="top">
+                <ion-icon name="settings-outline"></ion-icon>
+                <h1>Planification des examens</h1>
+            </div>
+            <div class="buttons">
+                <div class="actions">
+                    <a href="">
+                        <div class="action one">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <p>Planifier un examen</p>
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="action">
+                            <ion-icon name="eye-outline"></ion-icon>
+                            <p>Consulter</p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="logout">
+                    <a href="">
+                        <div class="action">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>    
+        <section class="menu">
+            <div class="box">
+                    <div class="insidebox semestre">
+                        <p>Choisit le semestre :</p>
+                        <select name="" id="semestre">
+                            <option value="">Semestre 1</option>
+                            <option value="">Semestre 2</option>
+                        </select>
+                    </div>
+                    <div class="insidebox palier">
+                        <p>Choisit le palier :</p>
+                        <div class="form">
+                            <select name="" id="palier">
+                                <option value="">License</option>
+                                <option value="">Master</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="insidebox specialites">
+                        <p>Choisit la spécialité :</p>
+                        <div class="form">
+                            <select name="" id="specialite" class="sp">
+                                <option value="">Acad</option>
+                                <option value="">ISIL</option>
+                                <option value="">Réseau</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="insidebox niveau">
+                        <p>Choisit le niveau :</p>
+                        <select name="" id="niveau">
+                            <option value="">L2</option>
+                            <option value="">L3</option>
+                        </select>
+                    </div>
+                    <div class="insidebox sections">
+                        <p>Choisit la section :</p>
+                        <select name="" id="section">
+                            <option value="">A</option>
+                            <option value="">B</option>
+                            <option value="">C</option>
+                        </select>
+                    </div>
+                    <div class="button">
+                        <button>Confirmer</button>
+                    </div>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+</body>
+</html>

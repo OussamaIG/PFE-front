@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planifier</title>
     <link rel="stylesheet" href="index.css">
-    <script src="https://unpkg.com/vue@next" defer></script>
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -14,195 +13,34 @@
         <section class="navbare" id="navbare">
             <div class="top">
                 <ion-icon name="settings-outline"></ion-icon>
-                <h1>Planifier un examen</h1>
+                <h1>Planification des examens</h1>
             </div>
             <div class="buttons">
-                <h3>Palier</h3>
-                <div class="button">
-                    <div class="scrollnav">
-                        <div class="Npalier">
-                            <div class="headerB">
-                                <p>License</p>
-                                <ion-icon name="caret-down-circle-outline" @click="showpalierL"></ion-icon>
-                            </div>
-                            <div class="specialites" :class="showP_L">
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>License académique</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteA"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_A">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>License académique</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteI"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_I">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>License académique</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteR"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_R">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="Npalier">
-                            <div class="headerB">
-                                <p>Master</p>
-                                <ion-icon name="caret-down-circle-outline" @click="showpalierM"></ion-icon>
-                            </div>
-                            <div class="specialites" :class="showP_M">
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>Master 1</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteM0"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_M1">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>Master 1</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteM1"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_M2">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>Master 1</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteM2"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_M3">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>Master 1</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteM3"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_M4">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>Master 1</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteM4"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_M5">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>Master 1</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteM5"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_M6">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="Nspeacialite">
-                                    <div class="Hspecialite">
-                                        <p>Master 1</p>
-                                        <ion-icon name="caret-down-circle-outline" @click="showspecialiteM6"></ion-icon>
-                                    </div>
-                                    <div class="Palier" :class="showS_M7">
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline" ></ion-icon>
-                                            <p>L2</p>
-                                        </div>
-                                        <div class="NPalier">
-                                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                                            <p>L3</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="actions">
+                    <a href="actionPlan.html">
+                        <div class="action">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <p>Planifier un examen</p>
                     </div>
+                    </a>
+                    <a href="">
+                        <div class="action">
+                            <ion-icon name="eye-outline"></ion-icon>
+                            <p>Consulter</p>
+                        </div>
+                    </a> 
                 </div>
-                
+                <div class="logout">
+                    <a href="">
+                        <div class="action">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>    
         <section class="menu">
-            
         </section>
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
