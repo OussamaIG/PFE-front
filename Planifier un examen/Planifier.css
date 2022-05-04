@@ -79,7 +79,6 @@ body{
 }
 .menu .search{
     display: flex;
-
     height: 5vh;
     justify-content: center;
     margin-top: 0.3em;

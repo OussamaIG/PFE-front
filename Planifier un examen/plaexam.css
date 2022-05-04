@@ -93,17 +93,26 @@ body{
     font-size: 25px;
     font-weight: 500;
 }
-select{
-    width: 20vw;
-    color: black;
-    border-radius: 5px;
-    border: 2px solid #1D6F42;
+.menu .cardModify .salle .scroll .checkbox{
+    display: flex;
+    flex-direction: column;
 }
-select:focus{
-    border: 2px solid #1D6F42;
-    outline: none;
+.menu .cardModify .salle .scroll .checkbox .label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-button{
+.menu .cardModify .salle .scroll .checkbox .label label{
+    font-size: 15px;
+    font-weight: 500;
+}
+.menu .cardModify .salle .scroll{
+    overflow-y: scroll;
+    height: 20vh;
+    border: 1px solid #1D6F42;
+    border-radius: 10px;
+}
+.menu .cardModify button{
     text-decoration: none;
     background-color: #1D6F42;
     color: whitesmoke;
@@ -114,13 +123,29 @@ button{
     margin-top: 1em;
     cursor: pointer;
 }
-::-webkit-scrollbar{
+.menu .cardModify .salle .scroll::-webkit-scrollbar{
     width: 0.8em;
 }
-::-webkit-scrollbar-track{
+.menu .cardModify .salle .scroll::-webkit-scrollbar-track{
     background: whitesmoke;
+    border-right: 1px solid #1D6F42;
+    border-radius: 10px;
+
 }
-::-webkit-scrollbar-thumb{
+.menu .cardModify .salle .scroll::-webkit-scrollbar-thumb{
     background-color: hsl(140 42% 42% / 0.5);
-    border-radius: 20vw;
+    border-radius: 10px;
+    border: 1px solid #1D6F42;
+}
+.menu .cardModify .card select{
+    width: 20vw;
+    color: black;
+    border-radius: 5px;
+    border: 2px solid #1D6F42;
+    display: flex;
+    flex-direction: column;
+}
+.menu .cardModify .card select:focus{
+    border: 2px solid #1D6F42;
+    outline: none;
 }
