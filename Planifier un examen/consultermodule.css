@@ -1,0 +1,149 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: whitesmoke;
+}
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+.navbare{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #1D6F42;
+}
+.navbare .buttons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.navbare .buttons .actions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+.navbare .buttons .actions .action,.navbare .buttons .logout .action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    margin-left: 1em;
+    border-radius: 10em;
+    height: 7vh;
+    width: 80%;
+    padding-left: 0.5em;
+}
+.navbare .buttons .actions .action:hover,.navbare .buttons .logout .action:hover{
+    background-color: whitesmoke;
+    color: #1D6F42;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbare .buttons .actions .action{
+    margin-top: 0.5em;
+}
+.navbare .buttons .logout .action{
+    margin-bottom: 0.5em;
+}
+.navbare .buttons .actions .action ion-icon,.navbare .buttons .logout .action ion-icon{
+    margin-right: 0.5em;
+}
+.navbare .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbare .top h1{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.navbare .top ion-icon{
+    font-size: 22px;
+    margin-right: 0.2em;
+    color: whitesmoke;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: whitesmoke;
+}
+.menu .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.menu .table .thead{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #1D6F42;
+    justify-content: space-between;
+    width: 60%;
+    height: 5vh;
+}
+.menu .table .thead.two{
+    border-top: 2px solid white;
+}
+.menu .table .thead .box.one{
+    border-left: 2px solid white !important;
+}
+.menu .table .thead .box{
+    border-left: 2px solid #1D6F42;
+    text-align: center;
+    font-size: 10px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.menu .table .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+.menu .table .title .info{
+    display: flex;
+    flex-direction: row;   
+}
+.menu .table .title .info .green{
+    color: #1D6F42;
+    margin-right: 0.2em;
+}
+.menu .table .generate{
+    display: flex;
+    width: 60%;
+    margin-top: 1em;
+}
+.menu .table .generate button{
+    background-color: #1D6F42;
+    height: 6vh;
+    width: 100%;
+    border-radius: 10px;
+    color: whitesmoke;
+    font-weight: 600;
+    border: 1px solid #1D6F42;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins';
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
