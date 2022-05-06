@@ -78,17 +78,26 @@ body{
 .menu{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 80%;
     background-color: whitesmoke;
 }
-.menu .table {
+.menu .table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.menu .table .print {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
-.menu .table .thead{
+.menu .table .print .thead{
     display: flex;
     flex-direction: row;
     border: 2px solid #1D6F42;
@@ -96,13 +105,16 @@ body{
     width: 60%;
     height: 5vh;
 }
-.menu .table .thead.two{
+.menu .table .print .thead.top{
+    background-color: #D3D3D3;
+}
+.menu .table .print .thead.two{
     border-top: 2px solid white;
 }
-.menu .table .thead .box.one{
-    border-left: 2px solid white !important;
+.menu .table .print .thead .box.one{
+    border-left: 2px solid #D3D3D3 !important;
 }
-.menu .table .thead .box{
+.menu .table .print .thead .box{
     border-left: 2px solid #1D6F42;
     text-align: center;
     font-size: 10px;
@@ -112,17 +124,17 @@ body{
     justify-content: center;
     align-items: center;
 }
-.menu .table .title{
+.menu .table .print .title{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
 }
-.menu .table .title .info{
+.menu .table .print .title .info{
     display: flex;
     flex-direction: row;   
 }
-.menu .table .title .info .green{
+.menu .table .print .title .info .green{
     color: #1D6F42;
     margin-right: 0.2em;
 }
