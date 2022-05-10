@@ -10,7 +10,7 @@ async function generatePDF(){
         width: 1000
         
     }).then((canvas) => {
-        doc.addImage(canvas.toDataURL("image/png"), 'PNG', 5, 100, 700);
+        doc.addImage(canvas.toDataURL("image/png"), 'PNG', 5, 100);
     })
 
     doc.save("Document.pdf");
