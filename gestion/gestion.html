@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planifier</title>
+    <link rel="stylesheet" href="gestion.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <section class="navbare" id="navbare">
+            <div class="top">
+                <ion-icon name="settings-outline"></ion-icon>
+                <h1>Agent gestion</h1>
+            </div>
+            <div class="buttons">
+                <div class="actions">
+                    <a href="actionPlan.html">
+                        <div class="action">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <p>Gestion enseignant</p>
+                    </div>
+                    </a>
+                    <a href="">
+                        <div class="action">
+                            <ion-icon name="eye-outline"></ion-icon>
+                            <p>Créer compte</p>
+                        </div>
+                    </a> 
+                </div>
+                <div class="logout">
+                    <a href="">
+                        <div class="action">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                            <p>Logout</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <div class="gestion">
+                <div class="topmenu">
+                    <div class="ajouterEn">
+                        <a href="">Ajouter un enseignant</a>
+                    </div>
+                    <div class="form">
+                        <form action="">
+                            <input type="text" placeholder="Rechercher un enseignant">
+                        </form>
+                        <div class="searchicon">
+                            <button><ion-icon name="search-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="listeEns">
+                    <div class="thead">
+                        <p>Matricule</p>
+                        <p class="nom">Nom</p>
+                        <p class="prenom">Prénom</p>
+                        <p>Grade</p>
+                        <p></p>
+                        <p></p>
+                    </div>
+                    <div class="tbody">
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Mayouf</p>
+                            <p>Lotfi</p>
+                            <p>MCA</p>
+                            <a href="profile.html"> <button><ion-icon name="create-outline"></ion-icon></button></a>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Ighil guitoun</p>
+                            <p>Oussama</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Rania</p>
+                            <p>Bourouina</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Grealish</p>
+                            <p>Jack</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Mahrez</p>
+                            <p>Riyad</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Debruyen</p>
+                            <p>Kevin</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Ighil guitoun</p>
+                            <p>Oussama</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Guardioula</p>
+                            <p>Josep</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Achir</p>
+                            <p>Meriem</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Sancho</p>
+                            <p>Jaden</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                        <div class="EnseignantLad">
+                            <p>191931029411</p>
+                            <p>Haaland</p>
+                            <p>Braut</p>
+                            <p>MCA</p>
+                            <button><ion-icon name="create-outline"></ion-icon></button>
+                            <button><ion-icon class="trash" name="trash-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+    </style>
+</body>
+</html>

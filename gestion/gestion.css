@@ -1,0 +1,209 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: whitesmoke;
+}
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+.navbare{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #1D6F42;
+}
+.navbare .buttons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.navbare .buttons .actions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+.navbare .buttons .actions .action,.navbare .buttons .logout .action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    margin-left: 1em;
+    border-radius: 10em;
+    height: 7vh;
+    width: 80%;
+    padding-left: 0.5em;
+}
+.navbare .buttons .actions .action:hover,.navbare .buttons .logout .action:hover{
+    background-color: whitesmoke;
+    color: #1D6F42;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbare .buttons .actions .action{
+    margin-top: 0.5em;
+}
+.navbare .buttons .logout .action{
+    margin-bottom: 0.5em;
+}
+.navbare .buttons .actions .action ion-icon,.navbare .buttons .logout .action ion-icon{
+    margin-right: 0.5em;
+}
+.navbare .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbare .top h1{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.navbare .top ion-icon{
+    font-size: 22px;
+    margin-right: 0.2em;
+    color: whitesmoke;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: whitesmoke;
+}
+.menu .gestion{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.menu .gestion .topmenu{
+    display: flex;
+    height: 5%;
+    margin-left: auto;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+.menu .gestion .topmenu a{
+    outline: none;
+    border: 2px solid #1D6F42;
+    background-color: white;
+    color: #1D6F42;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 4px 7px;
+    border-radius: 5px;
+    margin-right: 3em;
+    cursor: pointer;
+    text-decoration: none;
+}
+.menu .gestion .topmenu .form{
+    display: flex;
+    align-items: center;
+    margin-top: -0.1em;
+}
+.menu .gestion .topmenu .form form input{
+    border: 2px solid #1D6F42;
+    padding: 5px;
+    font-size: 15px;
+    color: #1D6F42;
+    font-weight: 500;
+    padding-left: 0.5em;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+} 
+.menu .gestion .topmenu .form .searchicon button{
+    display: flex;
+    align-items: center;
+    background-color: #1D6F42;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: -0.4em;
+    font-size: 17px;
+    border: 2px solid #1D6F42;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.menu .gestion .listeEns{
+    height: 95%;
+    width: 100%;
+    margin-top: 1em;
+}
+.menu .gestion .listeEns .thead{
+    height: 10%;
+    width: 96%;
+    font-weight: 600;
+    background-color: #b5cebc;
+    margin-left: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 1em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.menu .gestion .listeEns .thead .prenom{
+    margin-left: 1.8em;
+}
+.menu .gestion .listeEns .thead .nom{
+    margin-left: -0.8em;
+}
+.menu .gestion .listeEns .tbody{
+    height: 84%;
+    width: 97.5%;
+    overflow-y: scroll;
+    background-color: #a3c1ad;
+    margin-left: 1em;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.menu .gestion .listeEns .tbody .EnseignantLad{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #4a3143;
+    font-weight: 600;
+}
+.menu .gestion .listeEns .tbody .EnseignantLad button{
+    outline: none;
+    border: 1px solid #a3c1ad;
+    background-color: #a3c1ad;
+    font-size: 17px;
+    cursor: pointer;
+}
+.menu .gestion .listeEns .tbody .EnseignantLad p{
+    width: 16%;
+}
+.menu .gestion .listeEns .tbody::-webkit-scrollbar{
+    width: 0.8em;
+}
+.menu .gestion .listeEns .tbody::-webkit-scrollbar-track{
+    background: #a3c1ad;
+    border-right: 1px solid white;
+    border-radius: 10px;
+}
+.menu .gestion .listeEns .tbody::-webkit-scrollbar-thumb{
+    background-color: #2e8b57;
+    border-radius: 10px;
+    border: 1px solid #1D6F42;
+}
+.trash{
+    color: red;
+}

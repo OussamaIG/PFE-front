@@ -1,0 +1,152 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: whitesmoke;
+}
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+.navbare{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #1D6F42;
+}
+.navbare .buttons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.navbare .buttons .actions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+.navbare .buttons .actions .action,.navbare .buttons .logout .action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    margin-left: 1em;
+    border-radius: 10em;
+    height: 7vh;
+    width: 80%;
+    padding-left: 0.5em;
+}.navbare .buttons .actions .action.one{
+    background-color: whitesmoke;
+    color: #1D6F42;
+    font-weight: 600;
+}
+.navbare .buttons .actions .action:hover,.navbare .buttons .logout .action:hover{
+    background-color: whitesmoke;
+    color: #1D6F42;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbare .buttons .actions .action{
+    margin-top: 0.5em;
+}
+.navbare .buttons .logout .action{
+    margin-bottom: 0.5em;
+}
+.navbare .buttons .actions .action ion-icon,.navbare .buttons .logout .action ion-icon{
+    margin-right: 0.5em;
+}
+.navbare .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbare .top h1{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.navbare .top ion-icon{
+    font-size: 22px;
+    margin-right: 0.2em;
+    color: whitesmoke;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+.menu .listepf{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1D6F42;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+}
+.menu .listepf .scrollLISTE{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.menu .listepf .scrollLISTE .Pelement.top{
+    border-top-left-radius: 10px;
+}
+.menu .listepf .scrollLISTE .Pelement:last-child{
+    border-bottom-left-radius: 10px;
+    border-bottom: 1px solid #1D6F42;
+}
+.menu .listepf .scrollLISTE .Pelement{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: #1D6F42;
+    color: white;
+    font-weight: bolder;
+    border-bottom: 1px solid white;
+}
+.menu .listepf .scrollLISTE .Pelement .Pinfo{
+    display: flex;
+    align-items: center;
+}
+.menu .listepf .scrollLISTE .Pelement .Pinfo ion-icon{
+    font-size: 22px;
+    margin-right: 0.2em;
+}
+.menu .listepf .scrollLISTE .Pelement .Paction ion-icon{
+    font-size: 20px;
+    margin-right: 0.2em;
+    cursor: pointer;
+}
+.menu .listepf .scrollLISTE::-webkit-scrollbar{
+    width: 0.8em;
+}
+.menu .listepf .scrollLISTE::-webkit-scrollbar-track{
+    background: #1D6F42;
+    border-right: 1px solid #1D6F42;
+    border-radius: 10px;
+}
+.menu .listepf .scrollLISTE::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #1D6F42;
+}
