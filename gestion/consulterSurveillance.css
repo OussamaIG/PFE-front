@@ -1,0 +1,167 @@
+body{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins';
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: whitesmoke;
+}
+.container{
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+}
+.navbare{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: #1D6F42;
+}
+.navbare .buttons{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.navbare .buttons .actions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+.navbare .buttons .actions .action,.navbare .buttons .logout .action{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: whitesmoke;
+    margin-left: 1em;
+    border-radius: 10em;
+    height: 7vh;
+    width: 80%;
+    padding-left: 0.5em;
+}
+.navbare .buttons .actions .action:hover,.navbare .buttons .logout .action:hover{
+    background-color: whitesmoke;
+    color: #1D6F42;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbare .buttons .actions .action{
+    margin-top: 0.5em;
+}
+.navbare .buttons .logout .action{
+    margin-bottom: 0.5em;
+}
+.navbare .buttons .actions .action ion-icon,.navbare .buttons .logout .action ion-icon{
+    margin-right: 0.5em;
+}
+.navbare .top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.navbare .top h1{
+    font-size: 18px;
+    color: whitesmoke;
+}
+.navbare .top ion-icon{
+    font-size: 22px;
+    margin-right: 0.2em;
+    color: whitesmoke;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background-color: whitesmoke;
+}
+.menu .listesurveillance{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.menu .listesurveillance .listeHeader{
+    display: flex;
+    background-color: #bad8c2;
+    width: 80%;
+    height: 8%;
+    margin-top: 2em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+}
+.menu .listesurveillance .listeHeader p{
+    margin-left: 1em;
+    font-weight: 600;
+}
+.menu .listesurveillance .chargecours p{
+    font-weight: 600;
+    margin-left: 1em;
+    font-size: 14px;
+    color:white;
+}
+.menu .listesurveillance .chargecours{
+    display: flex;
+    background-color: #389b61;
+    width: 80%;
+    height: 6%;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu .listesurveillance .surveilanttitle{
+    display: flex;
+    background-color: #bad8c2;
+    width: 80%;
+    height: 8%;
+    margin-top: 2em;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    align-items: center;
+}
+.menu .listesurveillance .surveilanttitle p{
+    font-weight: 600;
+    margin-left: 1em;
+}
+.menu .listesurveillance .listesurveillants{
+    display: flex;
+    background-color: #389b61;
+    height: 65%;
+    width: 80%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menu .listesurveillance .listesurveillants .scroll{
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+.menu .listesurveillance .listesurveillants .scroll p{
+    font-weight: 500;
+    color: white;
+    margin-left: 1em;
+    font-size: 14px;
+}
+.menu .listesurveillance .listesurveillants .scroll::-webkit-scrollbar{
+    width: 0.8em;
+}
+.menu .listesurveillance .listesurveillants .scroll::-webkit-scrollbar-track{
+    background: #389b61;
+    border-right: 1px solid white;
+    border-radius: 10px;
+}
+.menu .listesurveillance .listesurveillants .scroll::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #1D6F42;
+}

@@ -138,12 +138,12 @@ body{
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-.menu .gestion .listeEns{
+.menu .gestion .listecomptes{
     height: 95%;
     width: 100%;
     margin-top: 1em;
 }
-.menu .gestion .listeEns .thead{
+.menu .gestion .listecomptes .thead{
     height: 10%;
     width: 96%;
     font-weight: 600;
@@ -156,13 +156,13 @@ body{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.menu .gestion .listeEns .thead .prenom{
+.menu .gestion .listecomptes .thead .prenom{
     margin-left: 1.8em;
 }
-.menu .gestion .listeEns .thead .nom{
+.menu .gestion .listecomptes .thead .nom{
     margin-left: -0.8em;
 }
-.menu .gestion .listeEns .tbody{
+.menu .gestion .listecomptes .tbody{
     height: 84%;
     width: 97.5%;
     overflow-y: scroll;
@@ -172,7 +172,7 @@ body{
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
 }
-.menu .gestion .listeEns .tbody .EnseignantLad{
+.menu .gestion .listecomptes .tbody .CompteLad{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -181,25 +181,23 @@ body{
     color: #4a3143;
     font-weight: 600;
 }
-.menu .gestion .listeEns .tbody .EnseignantLad button{
+.menu .gestion .listecomptes .tbody .CompteLad button{
     outline: none;
     border: 1px solid #a3c1ad;
     background-color: #a3c1ad;
     font-size: 17px;
     cursor: pointer;
 }
-.menu .gestion .listeEns .tbody .EnseignantLad p{
-    width: 16%;
-}
-.menu .gestion .listeEns .tbody::-webkit-scrollbar{
+
+.menu .gestion .listecomptes .tbody::-webkit-scrollbar{
     width: 0.8em;
 }
-.menu .gestion .listeEns .tbody::-webkit-scrollbar-track{
+.menu .gestion .listecomptes .tbody::-webkit-scrollbar-track{
     background: #a3c1ad;
     border-right: 1px solid white;
     border-radius: 10px;
 }
-.menu .gestion .listeEns .tbody::-webkit-scrollbar-thumb{
+.menu .gestion .listecomptes .tbody::-webkit-scrollbar-thumb{
     background-color: #2e8b57;
     border-radius: 10px;
     border: 1px solid #1D6F42;
